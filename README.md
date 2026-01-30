@@ -1,4 +1,1 @@
-DB_USER =   Evan-forum-g3
-DB_PASSWORD = 123456789
-DB_DATABASE = Evangadi-forum-group-3
-DB_JWT_SECRET = AWYZ03EpIC3upthMbevpZnQKY4iJH1Xl
+

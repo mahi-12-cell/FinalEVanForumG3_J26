@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://api-44iyg5mcca-uc.a.run.app/api",
+  baseURL: import.meta.env.VITE_API_URL
 });
 
 instance.interceptors.request.use(

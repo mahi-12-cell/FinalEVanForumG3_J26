@@ -46,14 +46,16 @@ app.use("/api/answers", likeUnlikeComentRoutes);
 const port = process.env.PORT || 5000;
 
 async function start() { 
-  try { 
-    await dbconnection.execute("select 'test'"); 
-    app.listen(port, () => { 
-      console.log(`Server running on port ${port}`); 
-      console.log("Database connection established"); });
-    
+  app.listen(port, async () => {
+  console.log(`Server running on port ${port}`);
+
+  try {
+    await dbconnection.execute("select 'test'");
+    console.log("Database connection established");
   } catch (error) {
-    console.log(error.message);
+    console.log("Database connection failed:", error.message);
   }
+});
+
 }
 start();

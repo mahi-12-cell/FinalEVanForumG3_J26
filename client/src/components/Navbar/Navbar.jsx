@@ -31,7 +31,7 @@ function Navbar() {
         ) : (
           <>
             <Link to="/ask">Ask Question</Link>
-            <button onClick={logout}>Logout</button>
+            <button onClick={logout}>Sign Out</button>
           </>
         )}
       </div>
